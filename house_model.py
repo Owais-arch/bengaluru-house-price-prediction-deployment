@@ -127,3 +127,14 @@ pip install streamlit
 from google.colab import files
 
 files.download("bangalore_house_model.pkl")
+
+
+import json
+
+columns = {
+    "data_columns": X.columns.tolist()
+}
+
+with open("columns.json", "w") as f:
+    json.dump(columns, f)
+    
