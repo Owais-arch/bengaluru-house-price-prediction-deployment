@@ -6,7 +6,11 @@ import numpy as np
 # -----------------------------
 # Load model and columns
 # -----------------------------
-model = pickle.load(open("bangalore_house_model.pkl.gz", "rb"))
+import gzip
+
+
+with gzip.open("bangalore_house_model.pkl.gz", "rb") as f:
+    model = pickle.load(f)
 
 with open("columns.json", "r") as f:
     data_columns = json.load(f)["data_columns"]
