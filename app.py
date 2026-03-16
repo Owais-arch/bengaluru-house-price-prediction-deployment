@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 import numpy as np
 
-rf = pickle.load(open("bangalore_house_model.pkl","rb"))
+rf = pickle.load(open("bangalore_house_model.pkl.gz","rb"))
 
 st.title("Bangalore House Price Prediction")
 
