@@ -1,4 +1,4 @@
-# bengaluru-house-price-prediction-deployment
+# bengaluru-house-price-prediction
 Machine Learning project to predict house prices in Bengaluru using regression models.
 # 🏠 Bengaluru House Price Prediction
 
