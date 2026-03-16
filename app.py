@@ -1,6 +1,8 @@
 import streamlit as st
 import pickle
 import numpy as np
+import gzip
+
 
 
 with gzip.open("bangalore_house_model.pkl.gz", "rb") as f:
